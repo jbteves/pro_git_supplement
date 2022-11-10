@@ -1,0 +1,32 @@
+\subsubsection{Questions for Understanding}
+\begin{enumerate}
+	\item Should you amend a commit if it has been pushed somewhere else?
+	\item Does unstaging a file change its contents in the working directory?
+	\item In which version of Git was `restore` introduced?
+	\item Are changes made with
+	   \begin{verbatim}
+		   git checkout -- FILE
+	   \end{verbatim}
+	   or
+	   \begin{verbatim}
+		   git restore FILE
+	   \end{verbatim}
+	   recoverable?
+\end{enumerate}
+
+\subsubsection{Exercises}
+\begin{enumerate}
+	\item Make a commit with a typo, such as "I lik cookies."
+	   Then, fix the typo and amend the commit.
+	   Try the same with a typo in the commit message itself.
+	   What do you notice about the commit hash afterwards?
+	\item Stage a commit with some typo.
+	   Correct the typo incorrectly,
+	   such as "I lik cookies" to "I likee cookies."
+	   Then try
+	   \begin{enumerate}
+		   \item Discarding the second typo and
+		   \item Unstaging the first.
+	   \end{enumerate}
+	   Note how after the unstage operation, the typo remains.
+\end{enumerate}

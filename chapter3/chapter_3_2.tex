@@ -1,0 +1,28 @@
+\subsubsection{Questions for Understanding}
+\begin{enumerate}
+	\item Can you switch branches with modified but uncommitted changes?
+	\item Does your working area change when you change branches?
+	\item What is a ``fast-forward"?
+	\item How do you delete a branch?
+	\item In the example given in ``Basic Merging," why is the merge not a
+	   ``fast-forward"?
+	\item Do merge commits have one parent?
+	\item If there is a merge conflict, is a merge commit made?
+	\item What command can you use to find out which files have merge conflicts?
+	\item How can you tell which branch one side of the merge conflict came from?
+	\item Will \verb`git status` indicate if you've finished merging conflicts?
+\end{enumerate}
+
+\subsubsection{Exercises}
+Do exercises in order in the recipes repository.
+\begin{enumerate}
+	\item Create and checkout to a new branch, \verb`muffins`.
+	   Create a recipe for muffins on the branch, and then merge it into main.
+	   What kind of merge was this?
+	\item Create and checkout to a new branch, \verb`cake2`.
+	   Make a cake recipe that is identical to the one in the branch \verb`cake`,
+	   but change the ingredients or baking instructions slightly.
+	   Merge \verb`cake` into \verb`main`, and then merge \verb`cake2` into main.
+	   You will need to resolve the merge conflict.
+	\item Delete all branches except for \verb`main`.
+\end{enumerate}

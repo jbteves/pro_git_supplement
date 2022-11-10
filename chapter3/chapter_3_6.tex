@@ -1,0 +1,40 @@
+\subsubsection{Questions for Understanding}
+\begin{enumerate}
+	\item Why does rebasing appear to make the history cleaner?
+	\item What will attract the scorn of friends and family?
+	\item What are two cases in which rebasing is fine?
+	\item Discuss the pros and cons of rebasing vs. merging.
+\end{enumerate}
+
+\subsubsection{Exercises}
+Do exercises in order in the recipes repository.
+\begin{enumerate}
+	\item Clean rebase
+	\begin{enumerate}
+	   \item Make two branches, one called \verb`bread` and one called
+	   \verb`sandwich`.
+	   \item Create the \verb`sandwich` recipe while referencing the
+	   incomplete \verb`bread`
+		  recipe.
+	   \item Switch to the \verb`bread` recipe and complete it.
+	   \item Rebase \verb`bread` onto \verb`main` and merge it.
+	   \item Rebase \verb`sandwich` onto \verb`main` and merge it.
+	   \item View the history.
+		  Note how it implies that \verb`bread` came first in history, even though
+		  you actually made the sandwich recipes first.
+	\end{enumerate}
+	\item Scorn-inducing rebase
+	\begin{enumerate}
+	   \item Create a branch, \verb`broccoli`, with instructions on making broccoli.
+		  Make sure the branch has several commits.
+	   \item Push \verb`broccoli` to \verb`test` (as set up in the previous chapter).
+	   \item Locally, rebase \verb`broccoli` onto \verb`main`.
+	   \item Add an additional recipe on your \verb`broccoli` branch.
+	   \item Attempt to push to the \verb`test` remote with your \verb`broccoli` branch.
+	   \item Force-push the new \verb`broccoli` branch to the remote.
+	   \item What would happen if somebody had already based new work after your
+		  first push?
+		  In this scenario, is it likely that something like that has happened?
+		  What if the project was larger?
+	\end{enumerate}
+\end{enumerate}

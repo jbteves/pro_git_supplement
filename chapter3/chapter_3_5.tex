@@ -1,0 +1,39 @@
+\subsubsection{Questions for Understanding}
+\begin{enumerate}
+	\item What flag do you use to override the default name \verb`origin` when running
+	   \verb`git clone`?
+	\item Why might there be several remotes for a project?
+	\item State the difference between the following:
+	   \begin{verbatim}
+		   git checkout -b branch remote/branch
+	   \end{verbatim}
+	   and
+	   \begin{verbatim}
+	   git checkout --track remote/branch
+	   \end{verbatim}
+	   and then explain why you might choose one over the other.
+	\item According to the text, it is preferable to use \verb`fetch` and
+	\verb`merge`
+	   rather than \verb`pull` by itself.
+	   Why might it be confusing to use \verb`pull`?
+\end{enumerate}
+
+\subsubsection{Exercises}
+Do exercises in order in the recipes repository.
+\begin{enumerate}
+\item Create a remote repository and add it as a remote.
+   Call it \verb`test`.
+   \begin{enumerate}
+	   \item Create a branch, \verb`eggs`, and put a recipe for scrambled eggs on it.
+		  Push it to \verb`test`.
+	   \item Checkout to \verb`main` and create a new branch, \verb`fried_eggs`.
+		  Push it to \verb`test`.
+	   \item Delete your local \verb`eggs` and \verb`fried_eggs` branches, then fetch them
+		  from \verb`test`.
+		  Note: the ability to do this is one of the strengths of \verb`git`.
+	   \item Merge \verb`eggs` and \verb`fried_eggs` into \verb`main`, and
+	   push \verb`main` to the
+		  \verb`test`.
+	   \item Delete \verb`eggs` and \verb`fried_eggs` both locally and on the remote.
+    \end{enumerate}
+\end{enumerate}
